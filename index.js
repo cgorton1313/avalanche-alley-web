@@ -10,13 +10,9 @@ app.use(express.static(path.join(__dirname + '/public')));
 // homepage
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
-    });
+});
 
-    // homepage
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
-    });
-    
-    app.listen(41111, () => {
-        console.log('server listening at http://localhost:41111');
-        });
+app.listen(41111, () => {
+    console.log(`Avalanche Alley server listening at http://localhost:${config.app.port}`);
+});
+
