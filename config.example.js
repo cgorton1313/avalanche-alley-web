@@ -1,4 +1,4 @@
-//make file config.js copy all info into it (should turn gray becuse it is in .gitignore)
+//make file "config.js" copy all info into it (should turn gray becuse it is in .gitignore)
 const config = {
     app: {
     port: 41111
