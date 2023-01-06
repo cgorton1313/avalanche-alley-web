@@ -70,3 +70,7 @@ var x = ` <div class="w3-container" >
 </div> `
 
 document.getElementById("dataTable").innerHTML=x
+
+$(document).ready(function () {
+    $('#myTable').DataTable();
+  });
