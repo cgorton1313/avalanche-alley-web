@@ -16,7 +16,7 @@ app.listen(41111, () => {
     console.log(`Avalanche Alley server listening at http://localhost:${config.app.port}`);
 });
 
-app.get('/avy_obs', async function (req, res) {
+app.get('/avy-obs', async function (req, res) {
     res.json("Hi there.");
     });
 
