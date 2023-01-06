@@ -39,10 +39,11 @@ async function getQueryData(sql) {
     return result;
     }
 
+   
+   
+   //Put last
     async function sqlTest() {
-        let sql = " // i actually use back-ticks here but I can't do those in kanbanFlow!
-        SELECT *
-        FROM data_obs_avy";
+        let sql = 'SELECT * FROM data_obs_avy';
         let result = await getQueryData(sql);
         return result;
         }
