@@ -12,4 +12,4 @@ let sideHTML= `<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Maps</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Videos</a>
   </nav>`
-  document.getElementById("sidebar").innerHTML = sideHtml
+  document.getElementById("sidebar").innerHTML = sideHTML
