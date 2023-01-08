@@ -8,7 +8,7 @@ let sideHTML= `<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Field Observations</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Snow Profiles</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Avalanche Observations</a>
-    <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Weather Obervations</a>
+    <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Weather Observations</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Maps</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Videos</a>
   </nav>`
