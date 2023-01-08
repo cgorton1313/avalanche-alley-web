@@ -16,7 +16,7 @@ async function getQueryData(sql) {
     // standard connect operation with some error handling
     connection.connect(function (err) {
     if (err) {
-        console.log.error('error when connecting to db:', err);
+        console.log('error when connecting to db:', err);
     } else {
         console.log.info('Connected to database ' + config.db.database + ' as user ' + config.db.user);
     }
@@ -29,7 +29,7 @@ async function getQueryData(sql) {
     try {
     result = await query(sql);
     } catch (err) {
-    console.log.error(err);
+    console.log(err);
     result = '{Error}';
     }
     
@@ -47,3 +47,6 @@ async function getQueryData(sql) {
         let result = await getQueryData(sql);
         return result;
         }
+
+        module.exports = {
+            sqlTest}
