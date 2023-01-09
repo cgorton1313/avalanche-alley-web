@@ -8,14 +8,14 @@ async function getAvyObs() {
     <table id="myTable" class="w3-table w3-striped w3-responsive">
       <thead>
         <tr>
-          <th>avrid</th>
-          <th>avpathid</th>
-          <th>avobsdate</th>
-          <th>avobstime</th>
-          <th>avobserverid</th>
-          <th>avtype</th>
-          <th>avtriggertyp</th>
-          <th>avcomment</th>
+          <th>ID</th>
+          <th>Path ID</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Observer</th>
+          <th>Type</th>
+          <th>Trigger Type</th>
+          <th>Comment</th>
         </tr>
       </thead>
       <tbody> `
