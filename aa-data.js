@@ -1,4 +1,4 @@
-const config = require('./config.js');
+const config = require(__dirname + '/config.js');
 const mysql = require('mysql');
 const util = require('util'); // for promisify
 
