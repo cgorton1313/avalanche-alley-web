@@ -2,6 +2,23 @@ const config = require('./config.js');
 const mysql = require('mysql');
 const util = require('util'); // for promisify
 
+async function sqlRealDeal() {
+    // let sql = 'SELECT avrid, avpathid, avobsdata, avobstime, avtype, avtriggertyp, avcomment FROM data_obs_avy';
+    let sql = 'SELECT avrid, avpathid, avobsdate, avobstime, avtype, avtriggertyp, avcomment FROM data_obs_avy';
+
+    let result = await getQueryData(sql);
+    return result;
+}
+
+
+//Put last
+async function sqlTest() {
+    let sql = 'SELECT * FROM data_obs_avy';
+    let result = await getQueryData(sql);
+    return result;
+}
+
+
 // this function will connect to the database, query, disconnect, and return the query result
 async function getQueryData(sql) {
     // this statement uses the values from config.js
@@ -41,13 +58,8 @@ async function getQueryData(sql) {
 
 
 
-//Put last
-async function sqlTest() {
-    let sql = 'SELECT * FROM data_obs_avy';
-    let result = await getQueryData(sql);
-    return result;
-}
+
 
 module.exports = {
-    sqlTest
+    sqlTest, sqlRealDeal
 }
