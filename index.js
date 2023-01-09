@@ -1,16 +1,3 @@
-getAvyObs()
-
-async function getAvyObs(){
-    let repsonse = await fetch('./avy-obs')
-    let avyObsStr = await repsonse.json()
-
-    console.log(avyObsStr)
-}
-
-
-
-
-
 
 const express = require('express');
 const app = express();
