@@ -8,14 +8,14 @@ async function getAvyObs() {
     <table id="myTable" class="w3-table w3-striped w3-responsive">
       <thead>
         <tr>
-          <th>avrid</th>
-          <th>avpathid</th>
-          <th>avobsdate</th>
-          <th>avobstime</th>
-          <th>avobserverid</th>
-          <th>avtype</th>
-          <th>avtriggertyp</th>
-          <th>avcomment</th>
+          <th>ID</th>
+          <th>Path ID</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Observer</th>
+          <th>Type</th>
+          <th>Trigger Type</th>
+          <th>Comment</th>
         </tr>
       </thead>
       <tbody> `
@@ -25,19 +25,16 @@ async function getAvyObs() {
     dataTable += `
         <tr>
           <td>${avyObsArray[i].avrid}</td>
-          <td>SHED10</td>
-          <td>2012-03-26</td>
-          <td>12:45:00</td>
-          <td>stein_01</td>
-          <td>WS</td>
-          <td>5</td>
-          <td>Wet slab released on SE aspect @ 5400 feet (1636 m) elevation. Debris ran 2/3rds path to at least 4,600
-            feet (1394 m) elevation. </td>
-    
+          <td>${avyObsArray[i].avpathid}</td>
+          <td>${avyObsArray[i].avobsdata}</td>
+          <td>${avyObsArray[i].avobstime}</td>
+          <td>${avyObsArray[i].avobserverid}</td>
+          <td>${avyObsArray[i].avtype}</td>
+          <td>${avyObsArray[i].avtriggertyp}</td>
+          <td>${avyObsArray[i].avcomment}</td>
         </tr> 
         `
   }
-
 
   dataTable += `
       </tbody>
