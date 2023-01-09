@@ -26,7 +26,7 @@ async function getAvyObs() {
         <tr>
           <td>${avyObsArray[i].avrid}</td>
           <td>${avyObsArray[i].avpathid}</td>
-          <td>${avyObsArray[i].avobsdata}</td>
+          <td>${avyObsArray[i].avobsdate}</td>
           <td>${avyObsArray[i].avobstime}</td>
           <td>${avyObsArray[i].avobserverid}</td>
           <td>${avyObsArray[i].avtype}</td>
