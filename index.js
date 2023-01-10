@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 
 app.get('/avy-obs', async function (req, res) {
     let someData = await aaData.sqlRealDeal()
-    console.log(someData)
     res.json(someData)
 })
 
