@@ -2,29 +2,31 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css" />
-  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
-  <title>W3.CSS Template</title>
+  <title>Avalanche Alley - Observations</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/aa-styles.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
 </head>
 
 <body>
   <div id="navbar" class="w3-top"></div>
+
   <nav id="sidebar" class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+  <div id="myOverlay" class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu"></div>
 
-    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
   <div class="w3-main" style="margin-left:250px">
+    
     <!--table-->
     <div id="dataTable" class="w3-container">
     </div>
