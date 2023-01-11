@@ -14,7 +14,7 @@ let sideHTML = `
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Field Observations</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Snow Profiles</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="observations.html">Avalanche Observations</a>
-    <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="weatherLinks.html">Weather Observations</a>
+    <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Weather Observations</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="maps.html">Maps</a>
     <a class="w3-bar-item w3-button w3-monospace w3-hover-black w3-text-blue" href="#">Videos</a>
 `
