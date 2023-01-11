@@ -2,14 +2,11 @@ const config = require(__dirname + '/config.js');
 const mysql = require('mysql');
 const util = require('util'); // for promisify
 
-async function sqlRealDeal() {
-    // let sql = 'SELECT avrid, avpathid, avobsdata, avobstime, avtype, avtriggertyp, avcomment FROM data_obs_avy';
+async function getAvyData() {
     let sql = 'SELECT avrid, avpathid, avobsdate, avobstime, avtype, avtriggertyp, avcomment FROM data_obs_avy';
-
     let result = await getQueryData(sql);
     return result;
 }
-
 
 //Put last
 async function sqlTest() {
@@ -17,7 +14,6 @@ async function sqlTest() {
     let result = await getQueryData(sql);
     return result;
 }
-
 
 // this function will connect to the database, query, disconnect, and return the query result
 async function getQueryData(sql) {
@@ -56,10 +52,6 @@ async function getQueryData(sql) {
     return result;
 }
 
-
-
-
-
 module.exports = {
-    sqlTest, sqlRealDeal
+    sqlTest, getAvyData
 }

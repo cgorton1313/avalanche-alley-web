@@ -1,8 +1,9 @@
 const express = require('express')
-const app = express()
 const path = require('path')
 const config = require(__dirname + '/config.js')
 const aaData = require(__dirname + '/aa-data.js')
+
+const app = express()
 
 // send all the static stuff
 app.use(express.static(path.join(__dirname + '/public')))
@@ -13,10 +14,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/avy-obs', async function (req, res) {
-    let someData = await aaData.sqlRealDeal()
-    res.json(someData)
+    let avyData = await aaData.getAvyData()
+    res.json(avyData)
 })
 
-app.listen(41111, () => {
+app.listen(config.app.port, () => {
     console.log(`Avalanche Alley server listening at http://localhost:${config.app.port}`);
 })

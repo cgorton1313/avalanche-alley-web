@@ -47,7 +47,3 @@ async function getAvyObs() {
     $('#myTable').DataTable();
   });
 }
-
-
-
-
